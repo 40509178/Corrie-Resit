@@ -1,4 +1,4 @@
-# Use the latest MySQL images
+# Use the latest MySQL image
 FROM mysql
 # Set the working directory
 WORKDIR /tmp
