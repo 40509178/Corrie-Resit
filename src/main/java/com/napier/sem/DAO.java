@@ -53,7 +53,6 @@ public class DAO {
                 "LIMIT 5";
 
         Statement statement = connection.createStatement();
-
         ResultSet resultSet = statement.executeQuery(queryString);
 
         while(resultSet.next())
@@ -66,7 +65,6 @@ public class DAO {
             String capital = resultSet.getString("capital");
 
             System.out.format("%s, %s, %s, %s, %s, %s\n", code, name, continent, region, population, capital);
-//            System.out.format("%s \n", code);
             System.out.println();
         }
         statement.close();
