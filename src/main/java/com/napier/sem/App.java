@@ -16,7 +16,9 @@ public class App {
         {
             connection = connect(args[0], DATABASE_DRIVER, false);
         }
-
+// Create instance of the database access object
+        DAO dao = new DAO(connection);
+        System.out.println(dao.AllCountries());
 }
     public static Connection connect(String location, String databaseDriver, boolean isTest)
     {
