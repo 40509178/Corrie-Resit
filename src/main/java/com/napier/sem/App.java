@@ -5,6 +5,7 @@ public class App {
     static final String DATABASE_DRIVER = "com.mysql.cj.jdbc.Driver";
     // Connection to MySQL database
     public static Connection connection;
+
     public static void main(String[] args) {
         System.out.println("Hello world");
         // Connect to database
@@ -16,9 +17,15 @@ public class App {
         {
             connection = connect(args[0], DATABASE_DRIVER, false);
         }
-// Create instance of the database access object
+
+        // Create instance of the database access object
         DAO dao = new DAO(connection);
         System.out.println(dao.AllCountries());
+
+        for(int i=0; i<2; i++)
+        {
+            System.out.println("Print : " + dao.AllCountries().get(i));
+        }
 }
     public static Connection connect(String location, String databaseDriver, boolean isTest)
     {
@@ -68,6 +75,4 @@ public class App {
         }
         return null;
     }
-
-
 }
