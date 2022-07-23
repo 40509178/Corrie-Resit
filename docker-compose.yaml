@@ -1,5 +1,5 @@
 # To start the database in docker use the command "docker-compose up" in the terminal
-# To stop the database us the command "docker-compose down" in the terminal
+# To stop the database use the command "docker-compose down" in the terminal
 
 version: '3'
 services:
