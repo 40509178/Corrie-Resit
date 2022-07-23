@@ -6,7 +6,7 @@ public class App {
     // Connection to MySQL database
     public static Connection connection;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         System.out.println("Hello world");
         // Connect to database
         if (args.length < 1)
@@ -20,12 +20,7 @@ public class App {
 
         // Create instance of the database access object
         DAO dao = new DAO(connection);
-        System.out.println(dao.AllCountries());
-
-        for(int i=0; i<2; i++)
-        {
-            System.out.println("Print : " + dao.AllCountries().get(i));
-        }
+        dao.firstQuery();
 }
     public static Connection connect(String location, String databaseDriver, boolean isTest)
     {

@@ -38,4 +38,37 @@ public class DAO {
         return records;
     }
 
+    public void firstQuery() throws SQLException
+    {
+        String queryString = "select code, " +
+                "country.name, " +
+                "continent, " +
+                "region," +
+                " country.population, " +
+                "city.name AS capital " +
+                "FROM country " +
+                "JOIN city ON country.capital = city.id " +
+                "WHERE country.code LIKE '%' " +
+                "ORDER BY country.population DESC " +
+                "LIMIT 5";
+
+        Statement st = connection.createStatement();
+
+        ResultSet resultSet = st.executeQuery(queryString);
+
+        while(resultSet.next())
+        {
+            String code = resultSet.getString("code");
+            String name = resultSet.getString("name");
+            String continent = resultSet.getString("continent");
+            String region = resultSet.getString("region");
+            Long population = resultSet.getLong("population");
+            String capital = resultSet.getString("capital");
+
+            System.out.format("%s, %s, %s, %s, %s, %s\n", code, name, continent, region, population, capital);
+//            System.out.format("%s \n", code);
+            System.out.println();
+        }
+        st.close();
+    }
 }
