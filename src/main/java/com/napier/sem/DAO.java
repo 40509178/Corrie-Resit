@@ -52,9 +52,9 @@ public class DAO {
                 "ORDER BY country.population DESC " +
                 "LIMIT 5";
 
-        Statement st = connection.createStatement();
+        Statement statement = connection.createStatement();
 
-        ResultSet resultSet = st.executeQuery(queryString);
+        ResultSet resultSet = statement.executeQuery(queryString);
 
         while(resultSet.next())
         {
@@ -69,6 +69,6 @@ public class DAO {
 //            System.out.format("%s \n", code);
             System.out.println();
         }
-        st.close();
+        statement.close();
     }
 }
