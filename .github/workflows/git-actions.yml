@@ -5,5 +5,6 @@ jobs:
   Test-Job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: docker-compose up ./.github/workflows/
+      - run: docker-compose up
