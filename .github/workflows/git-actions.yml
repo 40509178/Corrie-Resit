@@ -2,7 +2,7 @@ name: GitHub Actions Test
 on: [push]
 
 jobs:
-  Test-Job:
+  RunApp:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -15,9 +15,9 @@ jobs:
       - name: List files in the repository
         run: |
          ls ${{ github.workspace }}
-      - name: package app as self contained JAR file using Maven
+      - name: Package app as self contained JAR file using Maven
         run: mvn package -DskipTests=true -Dmaven.javadoc.skip=true
-      - name: deploy app and database containers and run queries
+      - name: Deploy app and database containers and run queries (App container connects to sql container successfully)
         run: docker-compose up --abort-on-container-exit
       - run: docker-compose down
       - run: echo "🍏 This job's status is ${{ job.status }}."

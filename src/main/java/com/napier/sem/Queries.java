@@ -32,7 +32,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, continent, region, capital, population);
         }
         statement.close(); // close statement
@@ -62,7 +62,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, resultContinent, region, capital, population);
         }
         statement.close(); // close statement
@@ -92,7 +92,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, continent, resultRegion, capital, population);
         }
         statement.close(); // close statement
@@ -122,7 +122,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, continent, resultRegion, capital, population);
         }
         statement.close(); // close statement
@@ -153,7 +153,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, resultContinent, region, capital, population);
         }
         statement.close(); // close statement
@@ -184,7 +184,7 @@ public class Queries {
             Long population = resultSet.getLong("population");
             String capital = resultSet.getString("capital");
 
-            // make string and print it
+            // make country report string and print it
             System.out.format("%s, %s, %s, %s, %s, %d\n", code, name, continent, resultRegion, capital, population);
         }
         statement.close(); // close statement
