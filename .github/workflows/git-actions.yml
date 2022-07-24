@@ -3,8 +3,6 @@ on: [push]
 
 language: java
 
-sudo: false
-
 addons:
   hosts:
     - database
