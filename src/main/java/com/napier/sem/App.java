@@ -21,6 +21,8 @@ public class App {
         // Create instance of the database access object
         Queries queries = new Queries(connection);
 
+        // Queries
+        
         System.out.println("All the countries in the world organised by largest population to smallest.");
         queries.query1();
 

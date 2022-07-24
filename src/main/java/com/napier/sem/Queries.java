@@ -54,6 +54,7 @@ public class Queries {
         Statement statement = connection.createStatement(); // make statement to execute query
         ResultSet resultSet = statement.executeQuery(queryString); // execute query
 
+        // TODO - add code snippet reference for all query methods
         while (resultSet.next()) { // print all results from query
             String code = resultSet.getString("code");
             String name = resultSet.getString("name");

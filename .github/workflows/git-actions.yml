@@ -1,10 +1,11 @@
 name: GitHub Actions Test
-on: [push]
+on: [push] #Runs this job when the code is pushed to github
 
 jobs:
   RunApp:
     runs-on: ubuntu-latest
     steps:
+      # From Git actions quickstart guide yml file
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
@@ -15,9 +16,13 @@ jobs:
       - name: List files in the repository
         run: |
          ls ${{ github.workspace }}
+      # Runs the Maven Package command to create Jar File
       - name: Package app as self contained JAR file using Maven
         run: mvn package -DskipTests=true -Dmaven.javadoc.skip=true
+      # Runs the docker-compose up command to deploy the app and database containers
       - name: Deploy app and database containers and run queries (App container connects to sql container successfully)
         run: docker-compose up --abort-on-container-exit
+      # Destroys the containers
       - run: docker-compose down
+      # From Git actions quickstart guide yml file
       - run: echo "🍏 This job's status is ${{ job.status }}."
