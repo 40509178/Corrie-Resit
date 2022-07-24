@@ -1,4 +1,4 @@
 FROM openjdk:latest
-COPY ./target/Corrie-Resit.jar /tmp
+COPY ./target/CorrieResit.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "-jar", "Corrie-Resit.jar", "database:3306"]
+ENTRYPOINT ["java", "-jar", "CorrieResit.jar", "database:3306"]
