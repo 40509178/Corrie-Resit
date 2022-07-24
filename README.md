@@ -7,7 +7,7 @@
 
 [Zube](https://zube.io/craig180885-napier/sem-group_project/w/workspace-1/kanban)
 
-by corrie
+by Corrie
 
 ## Overview
 The application:
@@ -20,4 +20,4 @@ The application:
 
 ## Requirements Met
 
-32 requirements of 32 requirements have been implemented, which is 100%
+8 requirements of the 8 requirements have been implemented, which is 100%.
