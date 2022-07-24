@@ -1,5 +1,25 @@
 name: GitHub Actions Demo
 on: [push]
+
+language: java
+
+sudo: false
+
+addons:
+  hosts:
+    - database
+
+services:
+  - docker
+
+install:
+  - docker build -t database database/.
+  - docker run --rm -d -e MYSQL_ROOT_PASSWORD=example -p 33061:3306 database
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+before_script:
+  - mvn clean
+
 jobs:
   Test-Job:
     runs-on: ubuntu-latest
