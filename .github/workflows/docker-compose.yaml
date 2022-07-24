@@ -1,0 +1,13 @@
+# To start the database in docker use the command "docker-compose up" in the terminal
+# To stop the database use the command "docker-compose down" in the terminal
+
+version: '3'
+services:
+
+  # database is in database folder
+  database:
+    build: database/. # This points to the folder where the Dockerfile is located and the world.sql file
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "33061:3306" # This maps the internal container port 3306 to the exposed port 33061.  This database can be accessed at localhost:33061

@@ -1,26 +1,9 @@
-name: GitHub Actions Demo
+name: GitHub Actions Test
 on: [push]
-
-language: java
-
-addons:
-  hosts:
-    - database
-
-services:
-  - docker
-
-install:
-  - docker build -t database database/.
-  - docker run --rm -d -e MYSQL_ROOT_PASSWORD=example -p 33061:3306 database
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
-before_script:
-  - mvn clean
 
 jobs:
   Test-Job:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: ls
+      - run: docker-compose up
