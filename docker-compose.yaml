@@ -4,9 +4,13 @@
 version: '3'
 services:
 
+  # app Dockerfile is in current folder which is .
+  app:
+    build: .
+
   # database is in database folder
   database:
-    build: database/. # This points to the folder where the Dockerfile is located and the world.sql file
+    build: database/. # This points to the folder where the database Dockerfile is located and the world.sql file
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     ports:
