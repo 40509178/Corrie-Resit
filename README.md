@@ -5,9 +5,9 @@
 [![Releases](https://img.shields.io/github/release/scan-lan/group-project/all.svg)](https://github.com/scan-lan/group-project/releases)
 [![LICENSE](https://img.shields.io/github/license/scan-lan/group-project.svg)](https://github.com/scan-lan/group-project/blob/master/LICENSE)
 
-[Zube](https://zube.io/craig180885-napier/sem-group_project/w/workspace-1/kanban)
+[Zube](https://zube.io/napier-232/corrie-resit/w/workspace-1/kanban)
 
-by corrie
+by Corrie
 
 ## Overview
 The application:
@@ -20,4 +20,4 @@ The application:
 
 ## Requirements Met
 
-32 requirements of 32 requirements have been implemented, which is 100%
+8 requirements of the 8 requirements have been implemented, which is 100%.
