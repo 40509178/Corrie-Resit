@@ -2,6 +2,11 @@ package com.napier.sem;
 
 import java.sql.*;
 
+/**
+ * There is duplicated code in every query method, this code executes the query statements
+ * I am aware that this is a bad practice, however, I didn't feel comfortable changing working code
+ * I decided to copy and paste this code into each method.
+ */
 public class Queries {
     private final Connection connection;
 
@@ -20,6 +25,10 @@ public class Queries {
                 "FROM country " +
                 "JOIN city ON country.capital = city.id " +
                 "ORDER BY country.population DESC;";
+
+        //Code below was inspired by a solution from the following URL
+        //https://alvinalexander.com/java/java-mysql-select-query-example/
+        //The code below is duplicated in each query method
 
         Statement statement = connection.createStatement(); // make statement to execute query
         ResultSet resultSet = statement.executeQuery(queryString); // execute query
@@ -54,7 +63,7 @@ public class Queries {
         Statement statement = connection.createStatement(); // make statement to execute query
         ResultSet resultSet = statement.executeQuery(queryString); // execute query
 
-        // TODO - add code snippet reference for all query methods
+
         while (resultSet.next()) { // print all results from query
             String code = resultSet.getString("code");
             String name = resultSet.getString("name");

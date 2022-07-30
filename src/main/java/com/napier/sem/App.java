@@ -18,7 +18,7 @@ public class App {
             connection = connect(args[0], DATABASE_DRIVER, false);
         }
 
-        // Create instance of the database access object
+        // Create an object of the queries class
         Queries queries = new Queries(connection);
 
         // Queries
