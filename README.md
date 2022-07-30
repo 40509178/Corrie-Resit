@@ -1,10 +1,5 @@
 # SEM Group Project
-!["kihef"Develop Branch Build Status](https://github.com/40509178/Corrie-Resit/actions/workflows/git-actions.yml/badge.svg?branch=develop)
-[![Build Status](https://img.shields.io/travis/com/scan-lan/Group-Project/master?label=master%20build)](https://travis-ci.com/scan-lan/Group-Project)
-[![Build Status](https://img.shields.io/travis/com/scan-lan/Group-Project/develop?label=develop%20build)](https://travis-ci.com/scan-lan/Group-Project)
-[![codecov](https://codecov.io/gh/scan-lan/Group-Project/branch/master/graph/badge.svg?token=XBP764GI1F)](https://codecov.io/gh/scan-lan/Group-Project)
-[![Releases](https://img.shields.io/github/release/scan-lan/group-project/all.svg)](https://github.com/scan-lan/group-project/releases)
-[![LICENSE](https://img.shields.io/github/license/scan-lan/group-project.svg)](https://github.com/scan-lan/group-project/blob/master/LICENSE)
+![Build Status](https://github.com/40509178/Corrie-Resit/actions/workflows/git-actions.yml/badge.svg?branch=develop)
 
 [Zube](https://zube.io/napier-232/corrie-resit/w/workspace-1/kanban)
 
