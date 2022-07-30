@@ -1,5 +1,5 @@
 # SEM Group Project
-![Develop Branch Build Status](https://github.com/40509178/Corrie-Resit/actions/workflows/github-actions-demo.yml/badge.svg?branch=develop)
+!["kihef"Develop Branch Build Status](https://github.com/40509178/Corrie-Resit/actions/workflows/git-actions.yml/badge.svg?branch=develop)
 [![Build Status](https://img.shields.io/travis/com/scan-lan/Group-Project/master?label=master%20build)](https://travis-ci.com/scan-lan/Group-Project)
 [![Build Status](https://img.shields.io/travis/com/scan-lan/Group-Project/develop?label=develop%20build)](https://travis-ci.com/scan-lan/Group-Project)
 [![codecov](https://codecov.io/gh/scan-lan/Group-Project/branch/master/graph/badge.svg?token=XBP764GI1F)](https://codecov.io/gh/scan-lan/Group-Project)
