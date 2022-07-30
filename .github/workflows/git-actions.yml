@@ -1,4 +1,4 @@
-name: GitHub Actions Test
+name: GitHub Actions Pipeline
 on: [push] #Runs this job when the code is pushed to github
 
 jobs:
