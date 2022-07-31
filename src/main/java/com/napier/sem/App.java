@@ -23,29 +23,29 @@ public class App {
 
         // Queries
 
-        System.out.println("All the countries in the world organised by largest population to smallest.");
-        queries.query1();
+        //System.out.println("All the countries in the world organised by largest population to smallest.");
+        //queries.query1();
 
-        // System.out.println("All the countries in a continent organised by largest population to smallest.");
-        // queries.query2("Europe");
+        System.out.println("All the countries in a continent organised by largest population to smallest.");
+         queries.query2("Europe");
 
         // System.out.println("All the countries in a region organised by largest population to smallest.");
         // queries.query3("Caribbean");
 
-        // System.out.println("The top N populated countries in the world where N is provided by the user.");
-        // queries.query4(10);
+        //System.out.println("The top N populated countries in the world where N is provided by the user.");
+        //queries.query4(10);
 
-        // System.out.println("The top N populated countries in a continent where N is provided by the user.");
+        //System.out.println("The top N populated countries in a continent where N is provided by the user.");
         // queries.query5(10, "Europe");
 
-        // System.out.println("The top N populated countries in a region where N is provided by the user.");
-        // queries.query6(10, "Caribbean");
+        //System.out.println("The top N populated countries in a region where N is provided by the user.");
+        //queries.query6(10, "Caribbean");
 
-        // System.out.println("All the cities in the world organised by largest population to smallest.");
-        // queries.query7();
+        //System.out.println("All the cities in the world organised by largest population to smallest.");
+        //queries.query7();
 
-        // System.out.println("All the cities in a continent organised by largest population to smallest.");
-        // queries.query8("South America");
+        //System.out.println("All the cities in a continent organised by largest population to smallest.");
+        //queries.query8("South America");
 
         // System.out.println("All the cities in a region organised by largest population to smallest.");
         // queries.query9("Central Africa");
